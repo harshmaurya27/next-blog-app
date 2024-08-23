@@ -4,7 +4,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
-const page = () => {
+const Page = () => {
   const [emails, setEmails] = useState([]);
   const fetchEmail = async () => {
     const response = await axios.get("/api/email");

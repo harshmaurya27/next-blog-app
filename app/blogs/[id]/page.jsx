@@ -19,7 +19,7 @@ const Page = ({ params }) => {
 
   useEffect(() => {
     fetchBlogData();
-  }, []);
+  }, [params.id]);
   return data ? (
     <>
       <div className="bg-gray-200 px-5 py-5 md:px-12 lg:px-28">
