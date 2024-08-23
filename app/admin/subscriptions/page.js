@@ -4,7 +4,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
-const Page = () => {
+const page = () => {
   const [emails, setEmails] = useState([]);
   const fetchEmail = async () => {
     const response = await axios.get("/api/email");
@@ -69,4 +69,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
